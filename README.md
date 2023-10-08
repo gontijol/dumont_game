@@ -26,10 +26,6 @@ Bem-vindo ao repositório do jogo **Exploradores Científicos RPG**, um emociona
    flutter pub get
    ```
 
-   ```bash
-   git clone https://github.com/gontijol/dumont_game.git
-   ```
-
 2. Execute o jogo:
 
    ```bash
