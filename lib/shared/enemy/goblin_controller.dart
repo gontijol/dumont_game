@@ -1,6 +1,6 @@
 import 'package:bonfire/bonfire.dart';
-import 'package:example/manual_map/dungeon_map.dart';
 
+import '../../manual_map/dungeon_map.dart';
 import 'goblin.dart';
 
 ///

@@ -1,7 +1,8 @@
 import 'package:bonfire/bonfire.dart';
-import 'package:example/lpc/lpc_player.dart';
-import 'package:example/lpc/lpc_sprite_sheet_loader.dart';
-import 'package:example/lpc/widgets/button_interface.dart';
+import 'package:dumont_game/lpc/lpc_player.dart';
+import 'package:dumont_game/lpc/lpc_sprite_sheet_loader.dart';
+import 'package:dumont_game/lpc/widgets/button_interface.dart';
+
 import 'package:flutter/material.dart';
 
 ///

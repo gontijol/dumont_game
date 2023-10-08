@@ -1,4 +1,4 @@
-name: example
+name: dumont_game
 description: A new Flutter application.
 publish_to: none
 
@@ -22,8 +22,7 @@ dependencies:
     sdk: flutter
   get:
 
-  bonfire:
-    path: ".."
+  bonfire: ^2.12.8
   fast_noise: ^1.0.1
   just_audio: ^0.9.35
 
@@ -36,11 +35,10 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
-  uses-material-design: true
+  uses-material-design: false
 
   assets:
     - assets/images/
@@ -64,3 +62,7 @@ flutter:
     - assets/images/multi_scenario/tile/
     - assets/audio/
     - assets/audio/ambient.mp3
+# fonts:
+#   - family: MaterialIcons
+#     fonts:
+#       - asset: assets/fonts/MaterialIcons-Regular.otf

@@ -1,6 +1,7 @@
 import 'package:bonfire/bonfire.dart';
-import 'package:example/manual_map/dungeon_map.dart';
-import 'package:example/random_map/player/pirate_sprite_sheet.dart';
+import 'package:dumont_game/random_map/player/pirate_sprite_sheet.dart';
+
+import '../../manual_map/dungeon_map.dart';
 
 ///
 /// Created by

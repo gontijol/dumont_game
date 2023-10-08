@@ -1,5 +1,6 @@
 import 'package:bonfire/bonfire.dart';
-import 'package:example/shared/util/player_sprite_sheet.dart';
+
+import '../shared/util/player_sprite_sheet.dart';
 
 ///
 /// Created by

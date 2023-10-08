@@ -1,5 +1,6 @@
 import 'package:bonfire/bonfire.dart';
-import 'package:example/shared/util/enemy_sprite_sheet.dart';
+
+import '../shared/util/enemy_sprite_sheet.dart';
 
 ///
 /// Created by

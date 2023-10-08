@@ -1,9 +1,10 @@
 import 'dart:math';
 
 import 'package:bonfire/bonfire.dart';
-import 'package:example/lpc/lpc_player.dart';
-import 'package:example/manual_map/dungeon_map.dart';
-import 'package:example/shared/interface/dumont_interface.dart';
+import 'package:dumont_game/lpc/lpc_player.dart';
+import 'package:dumont_game/manual_map/dungeon_map.dart';
+import 'package:dumont_game/shared/interface/dumont_interface.dart';
+
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';

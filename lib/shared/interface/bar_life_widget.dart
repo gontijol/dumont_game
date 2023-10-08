@@ -1,6 +1,7 @@
 import 'package:bonfire/bonfire.dart';
-import 'package:example/shared/interface/bar_life_controller.dart';
 import 'package:flutter/material.dart';
+
+import 'bar_life_controller.dart';
 
 ///
 /// Created by

@@ -1,13 +1,15 @@
 import 'package:bonfire/bonfire.dart';
-import 'package:example/dumont/game_dumont.dart';
-import 'package:example/shared/enemy/goblin_controller.dart';
-import 'package:example/shared/interface/bar_life_controller.dart';
-import 'package:example/shared/npc/critter/critter_controller.dart';
-import 'package:example/shared/player/knight_controller.dart';
+import 'package:dumont_game/shared/player/knight_controller.dart';
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:just_audio/just_audio.dart';
+
+import 'dumont/game_dumont.dart';
+import 'shared/enemy/goblin_controller.dart';
+import 'shared/interface/bar_life_controller.dart';
+import 'shared/npc/critter/critter_controller.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -54,46 +56,36 @@ class Menu extends StatelessWidget {
                     children: [
                       Opacity(
                         opacity: 0.25,
-                        child: Container(
-                          child: Image.asset(
-                            'assets/images/hs8336.png',
-                            width: Get.width * 0.25,
-                            height: Get.width * 0.25,
-                          ),
-                        ),
-                      ),
-                      RotatedBox(
-                        quarterTurns: 2,
-                        child: Container(
-                          child: Image.asset(
-                            'assets/images/arrow.png',
-                            width: Get.width * 0.05,
-                            height: Get.width * 0.05,
-                          ),
-                        ),
-                      ),
-                      Container(
                         child: Image.asset(
-                          'assets/images/tw3337.png',
+                          'assets/images/hs8336.png',
                           width: Get.width * 0.25,
                           height: Get.width * 0.25,
                         ),
                       ),
-                      Container(
+                      RotatedBox(
+                        quarterTurns: 2,
                         child: Image.asset(
                           'assets/images/arrow.png',
                           width: Get.width * 0.05,
                           height: Get.width * 0.05,
                         ),
                       ),
+                      Image.asset(
+                        'assets/images/tw3337.png',
+                        width: Get.width * 0.25,
+                        height: Get.width * 0.25,
+                      ),
+                      Image.asset(
+                        'assets/images/arrow.png',
+                        width: Get.width * 0.05,
+                        height: Get.width * 0.05,
+                      ),
                       Opacity(
                         opacity: 0.25,
-                        child: Container(
-                          child: Image.asset(
-                            'assets/images/mx2090.png',
-                            width: Get.width * 0.25,
-                            height: Get.width * 0.25,
-                          ),
+                        child: Image.asset(
+                          'assets/images/mx2090.png',
+                          width: Get.width * 0.25,
+                          height: Get.width * 0.25,
                         ),
                       ),
                     ],
@@ -117,7 +109,7 @@ class Menu extends StatelessWidget {
                       _buildButton(context, 'INICIAR', () async {
                         _navTo(context, const GameDumont());
                         AudioPlayer audioPlayer = AudioPlayer();
-                        await audioPlayer.setAsset('assets/audio/ambient.mp3');
+                        await audioPlayer.setAsset('audio/ambient.mp3');
                         await audioPlayer.play();
                         await audioPlayer.setLoopMode(LoopMode.all);
                       }),

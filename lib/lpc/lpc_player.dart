@@ -1,8 +1,8 @@
 import 'dart:ui';
 
 import 'package:bonfire/bonfire.dart';
-import 'package:example/lpc/lpc_sprite_sheet_loader.dart';
-import 'package:example/lpc/widgets/dialog_custom_character.dart';
+import 'package:dumont_game/lpc/lpc_sprite_sheet_loader.dart';
+import 'package:dumont_game/lpc/widgets/dialog_custom_character.dart';
 
 ///
 /// Created by

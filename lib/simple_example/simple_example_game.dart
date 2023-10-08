@@ -1,7 +1,8 @@
 import 'package:bonfire/bonfire.dart';
-import 'package:example/simple_example/my_enemy.dart';
-import 'package:example/simple_example/my_player.dart';
 import 'package:flutter/material.dart';
+
+import 'my_enemy.dart';
+import 'my_player.dart';
 
 ///
 /// Created by

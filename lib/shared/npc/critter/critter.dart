@@ -1,7 +1,7 @@
 import 'package:bonfire/bonfire.dart';
-import 'package:example/manual_map/dungeon_map.dart';
-import 'package:example/shared/util/critter_sprite_sheet.dart';
 
+import '../../../manual_map/dungeon_map.dart';
+import '../../util/critter_sprite_sheet.dart';
 import 'critter_controller.dart';
 
 class Critter extends SimpleNpc

@@ -1,5 +1,6 @@
 import 'package:bonfire/bonfire.dart';
-import 'package:example/lpc/lpc_player.dart';
+import 'package:dumont_game/lpc/lpc_player.dart';
+
 import 'package:flutter/material.dart';
 
 ///

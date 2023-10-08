@@ -1,7 +1,9 @@
 import 'package:bonfire/bonfire.dart';
-import 'package:example/shared/enemy/goblin.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import '../../colors.dart';
+import '../enemy/goblin.dart';
 
 class KnightInterface extends GameInterface {
   static const followerWidgetTestId = 'BUTTON';
@@ -86,37 +88,78 @@ class KnightInterface extends GameInterface {
       context: context,
       barrierDismissible: false,
       builder: (context) {
-        return Center(
-          child: Card(
-            child: Padding(
-              padding: const EdgeInsets.all(20),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  const Text('AwaitCallbackSceneAction test'),
-                  const SizedBox(
-                    height: 20,
+        return Padding(
+          padding: const EdgeInsets.all(200.0),
+          child: Column(
+            children: [
+              Card(
+                color: Colors.black.withOpacity(0.6),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(20),
+                  child: SizedBox(
+                    width: Get.width * 0.4,
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        const Text(
+                          'O material que você está adicionando impacta na atmosfera do planeta, e consequentemente na vida dos habitantes, escolha com sabedoria!',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(color: Colors.white, fontSize: 20),
+                        ),
+                        const SizedBox(
+                          height: 20,
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            ElevatedButton(
+                              style: ButtonStyle(
+                                backgroundColor:
+                                    MaterialStateProperty.all(successColor),
+                                // ignore: prefer_const_literals_to_create_immutables
+                                shape: MaterialStateProperty.all(
+                                  RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(20),
+                                  ),
+                                ),
+                              ),
+                              onPressed: () {
+                                Navigator.pop(context);
+                                completed();
+                              },
+                              child: const Text('CONFIRMAR'),
+                            ),
+                            ElevatedButton(
+                              style: ButtonStyle(
+                                backgroundColor:
+                                    MaterialStateProperty.all(errorColor),
+                                // ignore: prefer_const_literals_to_create_immutables
+                                shape: MaterialStateProperty.all(
+                                  RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(20),
+                                  ),
+                                ),
+                              ),
+                              onPressed: () {
+                                Navigator.pop(context);
+                                completed();
+                              },
+                              child: const Text('CANCELAR'),
+                            ),
+                          ],
+                        ),
+                        const SizedBox(
+                          height: 20,
+                        ),
+                      ],
+                    ),
                   ),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.pop(context);
-                      completed();
-                    },
-                    child: const Text('CONTINUE'),
-                  ),
-                  const SizedBox(
-                    height: 20,
-                  ),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.pop(context);
-                      gameRef.stopScene();
-                    },
-                    child: const Text('STOP SCENE'),
-                  ),
-                ],
+                ),
               ),
-            ),
+            ],
           ),
         );
       },

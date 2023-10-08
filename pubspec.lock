@@ -52,9 +52,10 @@ packages:
   bonfire:
     dependency: "direct main"
     description:
-      path: ".."
-      relative: true
-    source: path
+      name: bonfire
+      sha256: "0333594472cd448e1a11edf0461e9015290e1a273bc6a6f757016878b9d7c1c2"
+      url: "https://pub.dev"
+    source: hosted
     version: "2.12.8"
   boolean_selector:
     dependency: transitive

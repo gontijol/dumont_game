@@ -1,7 +1,9 @@
 import 'package:bonfire/bonfire.dart';
-import 'package:example/manual_map/dungeon_map.dart';
-import 'package:example/shared/util/common_sprite_sheet.dart';
+
 import 'package:flutter/material.dart';
+
+import '../../manual_map/dungeon_map.dart';
+import '../util/common_sprite_sheet.dart';
 
 class Torch extends GameDecoration with Lighting {
   Torch(Vector2 position)

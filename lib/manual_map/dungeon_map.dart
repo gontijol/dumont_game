@@ -1,11 +1,12 @@
 import 'dart:math';
 
 import 'package:bonfire/bonfire.dart';
-import 'package:example/shared/decoration/barrel_dragable.dart';
-import 'package:example/shared/decoration/chest.dart';
-import 'package:example/shared/decoration/spikes.dart';
-import 'package:example/shared/decoration/torch.dart';
-import 'package:example/shared/enemy/goblin.dart';
+
+import '../shared/decoration/barrel_dragable.dart';
+import '../shared/decoration/chest.dart';
+import '../shared/decoration/spikes.dart';
+import '../shared/decoration/torch.dart';
+import '../shared/enemy/goblin.dart';
 
 class DungeonMap {
   static double tileSize = 45;
