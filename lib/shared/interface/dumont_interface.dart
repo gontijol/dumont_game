@@ -22,15 +22,34 @@ class KnightInterface extends GameInterface {
         position: Vector2(Get.width * 0.1, Get.height - Get.height * 0.25),
       ),
     );
+
     //TODO: BARRA DE STATUS ( ATMOSFERA, OXIGÊNIO, TEMPERATURA, PRESSÃO ATMOSFÉRICA, RADIAÇÃO, GRAVIDADE, MAGNETISMO, ETC) IMPLEMENTAR DEPOIS
     await add(
       InterfaceComponent(
-        spriteUnselected: Sprite.load('bar_stats.png'),
-        size: Vector2(Get.width * 0.08, Get.height * 0.55),
+        spriteUnselected: Sprite.load('bar_stats_background.png'),
+        size: Vector2(Get.width * 0.02, Get.height * 0.55),
         id: 88,
-        position: Vector2(Get.width * 0.1, Get.height * 0.1),
+        position: Vector2(Get.width * 0.11, Get.height * 0.1),
       ),
     );
+
+    await add(
+      InterfaceComponent(
+        spriteUnselected: Sprite.load('bar_stats_background.png'),
+        size: Vector2(Get.width * 0.02, Get.height * 0.55),
+        id: 88,
+        position: Vector2(Get.width * 0.14, Get.height * 0.1),
+      ),
+    );
+    await add(
+      InterfaceComponent(
+        spriteUnselected: Sprite.load('bar_stats_background.png'),
+        size: Vector2(Get.width * 0.02, Get.height * 0.55),
+        id: 88,
+        position: Vector2(Get.width * 0.17, Get.height * 0.1),
+      ),
+    );
+
     for (int i = 0; i < 6; i++) {
       j = j + 0.055;
       await add(InterfaceComponent(
