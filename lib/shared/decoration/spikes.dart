@@ -1,6 +1,6 @@
 import 'package:bonfire/bonfire.dart';
 
-import '../../manual_map/dungeon_map.dart';
+import '../../map/dungeon_map.dart';
 import '../util/common_sprite_sheet.dart';
 
 class Spikes extends GameDecoration with Sensor {

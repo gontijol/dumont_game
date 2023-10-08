@@ -2,7 +2,7 @@ import 'package:bonfire/bonfire.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../colors.dart';
+import '../../core/colors.dart';
 import '../enemy/goblin.dart';
 
 class KnightInterface extends GameInterface {

@@ -1,6 +1,6 @@
 import 'package:bonfire/bonfire.dart';
 
-import '../../../manual_map/dungeon_map.dart';
+import '../../../map/dungeon_map.dart';
 import 'critter.dart';
 
 class CritterController extends StateController<Critter> {

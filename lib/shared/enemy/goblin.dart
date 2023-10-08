@@ -2,7 +2,7 @@ import 'package:bonfire/bonfire.dart';
 
 import 'package:flutter/material.dart';
 
-import '../../manual_map/dungeon_map.dart';
+import '../../map/dungeon_map.dart';
 import '../util/common_sprite_sheet.dart';
 import '../util/enemy_sprite_sheet.dart';
 import 'goblin_controller.dart';

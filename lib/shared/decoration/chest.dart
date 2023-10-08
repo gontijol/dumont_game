@@ -3,7 +3,7 @@ import 'package:dumont_game/shared/decoration/potion_life.dart';
 
 import 'package:flutter/widgets.dart';
 
-import '../../manual_map/dungeon_map.dart';
+import '../../map/dungeon_map.dart';
 import '../util/common_sprite_sheet.dart';
 
 class Chest extends GameDecoration with TapGesture {

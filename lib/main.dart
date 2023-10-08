@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:just_audio/just_audio.dart';
 
-import 'dumont/game_dumont.dart';
+import 'dumont/game.dart';
 import 'shared/enemy/goblin_controller.dart';
 import 'shared/interface/bar_life_controller.dart';
 import 'shared/npc/critter/critter_controller.dart';

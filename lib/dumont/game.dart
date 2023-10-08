@@ -1,8 +1,8 @@
 import 'dart:math';
 
 import 'package:bonfire/bonfire.dart';
-import 'package:dumont_game/lpc/lpc_player.dart';
-import 'package:dumont_game/manual_map/dungeon_map.dart';
+import 'package:dumont_game/dumont/lpc/lpc_player.dart';
+import 'package:dumont_game/map/dungeon_map.dart';
 import 'package:dumont_game/shared/interface/dumont_interface.dart';
 
 import 'package:flutter/foundation.dart' show kIsWeb;
@@ -10,7 +10,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 
-import '../lpc/lpc_sprite_sheet_loader.dart';
+import 'lpc/lpc_sprite_sheet_loader.dart';
 
 class GameDumont extends StatelessWidget {
   final int map;

@@ -3,7 +3,7 @@ import 'package:bonfire/bonfire.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import '../../../manual_map/dungeon_map.dart';
+import '../../../map/dungeon_map.dart';
 import '../../util/player_sprite_sheet.dart';
 import '../../util/wizard_sprite_sheet.dart';
 

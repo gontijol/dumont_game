@@ -1,5 +1,5 @@
 import 'package:bonfire/bonfire.dart';
-import 'package:dumont_game/lpc/lpc_sprite_sheet_loader.dart';
+import 'package:dumont_game/dumont/lpc/lpc_sprite_sheet_loader.dart';
 import 'package:flutter/material.dart';
 
 ///
