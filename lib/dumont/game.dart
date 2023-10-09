@@ -4,8 +4,6 @@ import 'package:bonfire/bonfire.dart';
 import 'package:dumont_game/dumont/lpc/lpc_player.dart';
 import 'package:dumont_game/map/dungeon_map.dart';
 import 'package:dumont_game/shared/interface/dumont_interface.dart';
-import 'package:dumont_game/shared/player/knight.dart';
-
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
