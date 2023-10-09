@@ -4,6 +4,7 @@ import 'package:bonfire/bonfire.dart';
 import 'package:dumont_game/dumont/lpc/lpc_player.dart';
 import 'package:dumont_game/map/dungeon_map.dart';
 import 'package:dumont_game/shared/interface/dumont_interface.dart';
+import 'package:dumont_game/shared/player/knight.dart';
 
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
@@ -31,33 +32,33 @@ class GameDumont extends StatelessWidget {
                 LogicalKeyboardKey.space,
               ],
             ),
-            // directional: JoystickDirectional(
-            //   spriteBackgroundDirectional: Sprite.load(
-            //     'joystick_background.png',
-            //   ),
-            //   spriteKnobDirectional: Sprite.load('joystick_knob.png'),
-            //   size: 100,
-            //   isFixed: false,
-            // ),
-            // actions: [
-            //   JoystickAction(
-            //     actionId: PlayerAttackType.attackMelee,
-            //     sprite: Sprite.load('joystick_atack.png'),
-            //     align: JoystickActionAlign.BOTTOM_RIGHT,
-            //     size: 80,
-            //     margin: const EdgeInsets.only(bottom: 50, right: 50),
-            //   ),
-            //   JoystickAction(
-            //     actionId: PlayerAttackType.attackRange,
-            //     sprite: Sprite.load('joystick_atack_range.png'),
-            //     spriteBackgroundDirection: Sprite.load(
-            //       'joystick_background.png',
-            //     ),
-            //     enableDirection: true,
-            //     size: 50,
-            //     margin: const EdgeInsets.only(bottom: 50, right: 160),
-            //   )
-            // ],
+            directional: JoystickDirectional(
+              spriteBackgroundDirectional: Sprite.load(
+                'joystick_background.png',
+              ),
+              spriteKnobDirectional: Sprite.load('joystick_knob.png'),
+              size: 100,
+              isFixed: false,
+            ),
+            actions: [
+              // JoystickAction(
+              //   actionId: PlayerAttackType.attackMelee,
+              //   sprite: Sprite.load('joystick_atack.png'),
+              //   align: JoystickActionAlign.BOTTOM_RIGHT,
+              //   size: 80,
+              //   margin: const EdgeInsets.only(bottom: 50, right: 50),
+              // ),
+              // JoystickAction(
+              //   actionId: PlayerAttackType.attackRange,
+              //   sprite: Sprite.load('joystick_atack_range.png'),
+              //   spriteBackgroundDirection: Sprite.load(
+              //     'joystick_background.png',
+              //   ),
+              //   enableDirection: true,
+              //   size: 50,
+              //   margin: const EdgeInsets.only(bottom: 50, right: 160),
+              // )
+            ],
           ),
           player: LPCPlayer(
             position: Vector2(Get.height * 0.5, Get.height * 0.55),
