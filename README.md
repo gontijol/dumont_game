@@ -1,4 +1,4 @@
-# Exploradores Científicos RPG
+# D.U.M.O.N.T RPG
 
 Bem-vindo ao repositório do jogo **Exploradores Científicos RPG**, um emocionante jogo de aventura 2D desenvolvido com Flutter, Bonfire e Flame. Neste jogo, os jogadores se tornam cientistas virtuais, exploram mundos misteriosos e resolvem desafios científicos emocionantes.
 
